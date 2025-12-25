@@ -1,0 +1,7 @@
+{
+  "success": false,
+  "feature_code": "",
+  "quality": 0.0,
+  "process_time": 12.351751327514648,
+  "message": "特征提取异常: Unsupported image type, must be 8bit gray or RGB image."
+}

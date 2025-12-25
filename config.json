@@ -1,0 +1,34 @@
+{
+  "service": {
+    "name": "face-recognition-service",
+    "version": "1.0.0",
+    "description": "人脸识别微服务",
+    "port": 8081,
+    "host": "0.0.0.0",
+    "debug": false
+  },
+  "face_extraction": {
+    "feature_dim": 128,
+    "quality_threshold": 0.6,
+    "max_faces": 5,
+    "similarity_threshold": 0.8
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/face_service.log",
+    "max_file_size": "10MB",
+    "backup_count": 5
+  },
+  "security": {
+    "api_key_required": false,
+    "rate_limit": {
+      "enabled": true,
+      "requests_per_minute": 60
+    }
+  },
+  "performance": {
+    "max_workers": 4,
+    "timeout": 30,
+    "batch_size_limit": 10
+  }
+}
